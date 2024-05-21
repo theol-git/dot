@@ -1,0 +1,20 @@
+! Font settings
+xterm*faceName: FiraCode Nerd Font Mono
+xterm*faceSize: 11
+
+! Color settings
+xterm*background: black
+xterm*foreground: grey90
+
+! Cursor settings
+xterm*cursorBlink: true
+xterm*cursorOffTime: 600
+xterm*cursorBar: true
+
+! Misc settings
+xterm*vt100.translations: #override \
+    Ctrl Shift <Key>C:  copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V:  insert-selection(CLIPBOARD)
+
+xterm*toolBar: false
+
