@@ -18,3 +18,10 @@ XTerm*vt100.translations: #override \
 
 XTerm*toolBar: false
 
+!! Make backspace send del code and not control+h
+XTerm*backarrowKey: false
+XTerm*ttyModes: erase ^?
+XTerm*vt100.translations: #override \
+    <Key>BackSpace: string(0x7f) \n\
+    <Key>Delete: string(0x1b) string("[3~")
+
