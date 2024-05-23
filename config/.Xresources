@@ -12,16 +12,16 @@ XTerm*cursorOffTime: 600
 XTerm*cursorBar: true
 
 ! Misc settings
-XTerm*vt100.translations: #override \
-    Ctrl Shift <Key>C:  copy-selection(CLIPBOARD) \n\
-    Ctrl Shift <Key>V:  insert-selection(CLIPBOARD)
-
 XTerm*toolBar: false
 
-!! Make backspace send del code and not control+h
+! Backspace and Delete Key Behavior
 XTerm*backarrowKey: false
 XTerm*ttyModes: erase ^?
+
+! Consolidated Key Bindings
 XTerm*vt100.translations: #override \
+    Ctrl Shift <Key>C: copy-selection(CLIPARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPARD) \n\
     <Key>BackSpace: string(0x7f) \n\
     <Key>Delete: string(0x1b) string("[3~")
 
