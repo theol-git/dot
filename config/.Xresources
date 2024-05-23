@@ -20,8 +20,8 @@ XTerm*ttyModes: erase ^?
 
 ! Consolidated Key Bindings
 XTerm*vt100.translations: #override \
-    Ctrl Shift <Key>C: copy-selection(CLIPARD) \n\
-    Ctrl Shift <Key>V: insert-selection(CLIPARD) \n\
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
     <Key>BackSpace: string(0x7f) \n\
     <Key>Delete: string(0x1b) string("[3~")
 
